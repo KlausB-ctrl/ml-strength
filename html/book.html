@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <title>ML Strength - Book</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/a3443240ca.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script src='../js/header.js'></script>
+        <div id="book-intro"></div>
+        <div id="plans">
+            <div id="memberships">
+                <h1>MEMBERSHIPS</h1>
+                <div class="tier">
+                    <h2>Standard</h2>
+                    <h3>$19.99/Week</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <ul>
+                        <li>Aliquam tincidunt mauris eu risus.</li>
+                        <li>Vestibulum auctor dapibus neque.</li>
+                        <li>Nunc dignissim risus id metus.</li>
+                    </ul>
+                    <button>GET STARTED</button>
+                </div>
+                <div class="tier">
+                    <h2>Athlete</h2>
+                    <h3>$23.99/Week</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <ul>
+                        <li>Cras ornare tristique elit.</li>
+                        <li>Vivamus vestibulum ntulla nec ante.</li>
+                        <li>Praesent placerat risus quis eros.</li>
+                    </ul>
+                    <button>GET STARTED</button>
+                </div>
+
+                <div class="tier">
+                    <h2>Olympian</h2>
+                    <h3>$29.99/Week</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <ul>
+                        <li>Fusce pellentesque suscipit nibh.</li>
+                        <li>Integer vitae libero ac risus egestas placerat.</li>
+                        <li>Vestibulum commodo felis quis tortor.</li>
+                    </ul>
+                    <button>GET STARTED</button>
+                </div>
+            </div>
+        </div>
+        <div id="casual-rate">
+            <h2>NO OBLIGATION, NO PRESSURE</h2>
+            <p>Unsure about commiting to regular training? We offer $10 casual visit rates! Visit us and decide for yourself!</p>
+        </div>
+        <div id="contact">
+            <form>
+                <h2>CONTACT US</h2>
+                <div id="fields">
+                    <div>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="fname" title="Please enter your first name." placeholder="First Name" pattern="/^[A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+([\ A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+)*/u" required>
+                        <div id="fname-error">
+                            <p class="red">Please enter your first name.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" id="lname" name="lname" title="Please enter your last name." placeholder="Last Name" pattern="/^[A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+([\ A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+)*/u" required>
+                        <div id="lname-error">
+                            <p class="red">Please enter your last name.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label><br>
+                        <input type="email" id="email" name="email" title="Please enter a valid email address (eg. example@mail.com)." placeholder="Email Address " required>
+                        <div id="email-error">
+                            <p class="red">Please enter a valid email address (eg. example@mail.com).</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label><br>
+                        <input type="number" id="phone" name="phone" title="Please enter a valid Australian phone number (eg. 0700000000)." placeholder="Phone Number" oninvalid="this.setCustomValidity('Please enter a valid Australian phone number (eg. 0700000000).')" min="0" max="9999999999" required>
+                        <div id="phone-error">
+                            <p class="red">Please enter a valid Australian phone number (eg. 0700000000).</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="location">Club Location</label><br>
+                        <select id="location" name="location" title="Please select the club you wish to contact." required>
+                            <option value="" disabled selected>Select your location.</option>
+                            <option value="ashgrove">Ashgrove</option>
+                            <option value="brisbane-city">Brisbane City</option>
+                            <option value="chermside">Chermside</option>
+                            <option value="graceville">Graceville</option>
+                            <option value="westlake">Westlake</option>
+                        </select>
+                        <div id="location-error">
+                            <p class="red">Please select the club you wish to contact.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label><br>
+                        <select id="subject" name="subject" title="Please select the topic you wish to discuss." required>
+                            <option value="" disabled selected>Select your subject.</option>
+                            <option value="membership">Membership</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="class">Class</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div id="subject-error">
+                            <p class="red">Please select the topic you wish to discuss.</p>
+                        </div>
+                    </div>
+
+                    <div id="message-div">
+                        <label for="message">Message</label><br>
+                        <textarea id="message" title="Please enter a message to send." name="message" placeholder="Message" maxlength="2000" required></textarea>
+                        <div id="message-error">
+                            <p class="red">Please enter a message to send.</p>
+                        </div>
+                    </div>
+                    <div id="popup">
+                        <p>Having trouble? Click here for help!</p>
+                        <span id="popup-video" class="show"><video controls><source src="../videofiles/placeholder.mp4"></video></span>
+                    </div>
+                    <button id="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        <script src='../js/footer.js'></script>
+        <script src="../js/book.js"></script>
+    </body>
+</html>
